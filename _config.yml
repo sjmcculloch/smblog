@@ -57,6 +57,7 @@ defaults:
 # Serving
 url: ""
 baseurl: ""
+shareurl: "https://www.smcculloch.com"
 
 # Includes
 include: ["_pages", "_redirects"]

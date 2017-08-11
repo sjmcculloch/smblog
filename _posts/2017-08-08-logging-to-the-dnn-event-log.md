@@ -8,7 +8,7 @@ category:
 - code
 ---
 
-Event logs are great tools for Developers and Administrators alike. They provide an insight into the state and history of an application. 
+Event logs are great tools for Developers and Administrators alike. They provide an insight into the running state and history of an application. 
 
 For DNN, there are two repositories for collecting logging information that both serve different purposes.
 

@@ -6,6 +6,9 @@
 	}
 	.the-content { width: 100%; }
 	.backtotop { width: 30px !important; height: 30px !important; bottom: 10px !important; right: 10px !important; background-size: 50% !important; }
+	.user-profile img.avatar { display: none; }
+	.user-profile div.mainmenu { display: none; }
+	.user-profile p.about-me { display: none; }
 }
 
 @include media-query($on-smaller-tablets) {
@@ -17,9 +20,15 @@
 			}
 		}
 	}
+	.user-profile img.avatar { display: none; }
+	.user-profile div.mainmenu { display: none; }
+	.user-profile p.about-me { display: none; }
 }
 
 @include media-query($on-phone) {
 	.the-content .search > div .search-holder { width: 45%; }
 	.the-content .post .post-footer div.tags { position: static; text-align: left; border-top: 1px solid $grey-color-lightest; }
+	.user-profile img.avatar { display: none; }
+	.user-profile div.mainmenu { display: none; }
+	.user-profile p.about-me { display: none; }
 }

@@ -8,7 +8,7 @@ category:
 - music
 ---
 
-In June 2016, Kelly Clarkson began posting recordings of her live performances on [www.kellyclarksonlive.com](www.kellyclarksonlive.com). Each month would feature a new song until early 2017 when new songs stopped appearing (in anticipation of her new album?).
+In June 2016, Kelly Clarkson began posting recordings of her live performances on [www.kellyclarksonlive.com](//www.kellyclarksonlive.com). Each month would feature a new song until early 2017 when new songs stopped appearing (in anticipation of her new album?).
 
 ![Kelly Clarkson](/images/post-assets/kelly-clarkson-live.jpg)
 

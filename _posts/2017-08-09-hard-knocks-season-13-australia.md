@@ -10,6 +10,8 @@ category:
 
 [Hard Knocks](http://www.hbo.com/hard-knocks) is a reality sports documentary television series produced by NFL Films and HBO. It's thirteenth season features the [Tampa Bay Buccaneers](http://www.buccaneers.com/).
 
+![Hard Knocks on 7 Mate](/images/post-assets/hard-knocks-tampa-bay-buccaneers.jpg)
+
 The Seven Network owns the current rights to NFL broadcasts within Australia and that includes Hard Knocks which broadcasts for free on 7Mate. 
 
 Here are the ways to watch each episode.

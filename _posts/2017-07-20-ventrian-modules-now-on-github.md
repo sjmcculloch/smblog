@@ -28,6 +28,8 @@ For this primary reason it now makes sense to take the existing modules off vent
 
 [https://github.com/ventrian](https://github.com/ventrian)
 
+They are all licensed under MIT.
+
 Thank you again for all the years of loyal support! 
 
 FYI, I am still working [daily in DNN](https://f5.com/) (and many other technologies). If you need to contact me, you will find me on [Twitter](https://twitter.com/sj_mcculloch) or [LinkedIn](https://www.linkedin.com/in/sjmcculloch/). 

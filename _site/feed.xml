@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scott McCulloch - Full Stack Developer</title>
+    <description>I work at F5 Networks. I enjoy sport, gaming and listening to music. Follow me on Twitter or drop me a line.</description>
+    <link>https://www.smcculloch.com/</link>
+    <atom:link href="https://www.smcculloch.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 18 Aug 2017 17:54:03 +1000</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2017 17:54:03 +1000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>What happened to kellyclarksonlive.com?</title>
+        <description>&lt;p&gt;In June 2016, Kelly Clarkson began posting recordings of her live performances on &lt;a href=&quot;http://www.kellyclarksonlive.com&quot;&gt;www.kellyclarksonlive.com&lt;/a&gt;. Each month would feature a new song until early 2017 when new songs stopped appearing (in anticipation of her new album?).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/kelly-clarkson-live.jpg&quot; alt=&quot;Kelly Clarkson&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, her IT support has let her down and instead of the site rendering you’ll get:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Error establishing a database connection&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Fortunately I’ve found the direct links to the underlying hosting service:&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/57ee9e92cd0f68bbf1f00e17/1475255958029/Bang+Bang.mp3/original/Bang+Bang.mp3&quot;&gt;Bang Bang // Ariana Grande, Nicki Minaj, Jessie J&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/576d3e7b6b8f5b241e35a3f6/1466777218284/Creep.m4a/original/Creep.m4a&quot;&gt;Creep // Radiohead&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/576d3e14e6f2e1f617ae53b2/1466777116805/Fix+You.m4a/original/Fix+You.m4a&quot;&gt;Fix You // Coldplay&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/5852c9ede3df2841c243abe1/1481820667697/Hard+Candy+Christmas.m4a/original/Hard+Candy+Christmas.m4a&quot;&gt;Hard Candy Christmas // Dolly Parton &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/5852c9a8ff7c5028a8c99bb1/1481820593902/Heartbeat+Song.m4a/original/Heartbeat+Song.m4a&quot;&gt;Heartbeat Song // Kelly Clarkson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/576d3eab6b8f5b241e35a52f/1466777265752/I%27d+Rather+Go+Blind.m4a/original/I%27d+Rather+Go+Blind.m4a&quot;&gt;I’d Rather Go Blind // Etta James&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/581376179de4bb8b85feebf4/1477670429290/I%27ll+Stand+By+You.m4a/original/I%27ll+Stand+By+You.m4a&quot;&gt;I’ll Stand By You // The Pretenders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/57c06a93be6594e478c15bd2/1472227989878/love_me_like_a_man.mp3/original/love_me_like_a_man.mp3&quot;&gt;Love Me Like A Man // Bonnie Raitt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/579b7fb859cc68cccf283291/1469808588686/Oh%21+Darling.m4a/original/Oh%21+Darling.m4a&quot;&gt;Oh Darlin’ // The Beatles&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/576d3ebe6b8f5b241e35a5bf/1466777284707/Ready+For+Love.m4a/original/Ready+For+Love.m4a&quot;&gt;Ready For Love // India.Arie&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/57c06a73be6594e478c15a5a/1472227958189/shake_it_out.mp3/original/shake_it_out.mp3&quot;&gt;Shake It Out // Florence And The Machine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/579b7f8659cc68cccf2830c2/1469808551883/Top+Of+The+World.m4a/original/Top+Of+The+World.m4a&quot;&gt;Top Of The World // Dixie Chicks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/582f33ef44024316f588823a/1479488500065/Walkaway+Joe.m4a/original/Walkaway+Joe.m4a&quot;&gt;Walkaway Joe // Trisha Yearwood&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/5852c944d2b8579de234ed56/1481820500096/Walkaway_Uptown+Funk.m4a/original/Walkaway_Uptown+Funk.m4a&quot;&gt;Walkaway/Uptown Funk // Kelly Clarkson/Mark Ronson feat. Bruno Mars&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/57ee9ec7cd0f68bbf1f010d4/1475256020976/We+Found+Love.mp3/original/We+Found+Love.mp3&quot;&gt;We Found Love // Calvin Harris featuring Rihanna&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/582f3443d2b857b63cbaf41e/1479488584797/Wide+Open+Spaces.m4a/original/Wide+Open+Spaces.m4a&quot;&gt;Wide Open Spaces // Dixie Chicks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://static1.squarespace.com/static/576adf5f197aea820234506c/t/581375fb9de4bb8b85feeabf/1477670402171/You+Don%27t+Know+Me.m4a/original/You+Don%27t+Know+Me.m4a&quot;&gt;You Don’t Know Me // Ray Charles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(right click -&amp;gt; save link as)&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Aug 2017 00:00:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/music/what-happened-to-kellyclarksonlive </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/music/what-happened-to-kellyclarksonlive </guid>
+        
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>How to watch NFL Hard Knocks in Australia</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.hbo.com/hard-knocks&quot;&gt;Hard Knocks&lt;/a&gt; is a reality sports documentary television series produced by NFL Films and HBO. It’s thirteenth season features the &lt;a href=&quot;http://www.buccaneers.com/&quot;&gt;Tampa Bay Buccaneers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/hard-knocks-tampa-bay-buccaneers.jpg&quot; alt=&quot;Hard Knocks on 7 Mate&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Seven Network owns the current rights to NFL broadcasts within Australia and that includes Hard Knocks which broadcasts for free on 7Mate.&lt;/p&gt;
+
+&lt;p&gt;Here are the ways to watch each episode.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;episode-1&quot;&gt;Episode 1&lt;/h2&gt;
+
+&lt;p&gt;Episode 1 is available to stream anytime on nfl.com on this &lt;a href=&quot;http://www.nfl.com/videos/nfl-network-hard-knocks/0ap3000000827378/Watch-the-full-Hard-Knocks-season-premiere&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, it will be on &lt;strong&gt;7Mate&lt;/strong&gt; @ Wednesday 23 August 12:00am - 1:00am&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 09 Aug 2017 00:00:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/sport/hard-knocks-season-13-australia </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/sport/hard-knocks-season-13-australia </guid>
+        
+        
+        <category>sport</category>
+        
+      </item>
+    
+      <item>
+        <title>How do I write to DNN event Logs?</title>
+        <description>&lt;p&gt;Event logs are great tools for Developers and Administrators alike. They provide an insight into the running state and history of an application.&lt;/p&gt;
+
+&lt;p&gt;For DNN, there are two repositories for collecting logging information that both serve different purposes.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;logging-via-admin---event-viewer&quot;&gt;Logging via Admin -&amp;gt; Event Viewer&lt;/h2&gt;
+
+&lt;p&gt;The DNN event viewer (&lt;em&gt;admin -&amp;gt; event viewer&lt;/em&gt;) is a portal aware logging repository that has a UI for portal and host administrators.&lt;/p&gt;
+
+&lt;p&gt;Portal administrators will only see their portal’s events while hosts will see everything.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/dnn-event-viewer.png&quot; alt=&quot;DNN Event Viewer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Writing to the DNN event log is straight forward (although there are a lot of overloads):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;DotNetNuke.Services.Log.EventLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objEventLog&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;EventLogController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;objEventLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AddLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Sample Message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Something Interesting Happened!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PortalSettings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventLogController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EventLogType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ADMIN_ALERT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For EventLogType, the common ones developers use are &lt;em&gt;Host_Alert&lt;/em&gt; and &lt;em&gt;Admin_Alert&lt;/em&gt;. There are many more if you look up the enumerated type.&lt;/p&gt;
+
+&lt;h2 id=&quot;log4net&quot;&gt;Log4Net&lt;/h2&gt;
+
+&lt;p&gt;Alternatively, you can log to Log4Net which is bundled with the DNN install. The main differences are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Log4Net does not require an instance of PortalSettings&lt;/li&gt;
+  &lt;li&gt;Log4Net does not not have a UI for viewing entries (it stores daily files in ~/portals/_default/logs/*)&lt;/li&gt;
+  &lt;li&gt;Log4Net files will exist until physically deleted through the file system&lt;/li&gt;
+  &lt;li&gt;Log4Net is typically a faster logging process&lt;/li&gt;
+  &lt;li&gt;Log4Net is unaware of Portal and Host differences&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Logging is relatively straight forward (make sure you swap MyClassName for your class name).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// include somewhere in your class - available to all methods.
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ILog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Logger&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoggerSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetLogger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// cause some error
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you’re interested in Log4Net configuration, you can find it in {site-root-folder}/DotNetNuke.log4net.config and review their &lt;a href=&quot;https://logging.apache.org/log4net/release/manual/configuration.html&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt; 
+
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;log4net&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;appender&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;RollingFile&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;log4net.Appender.RollingFileAppender&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;file&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Portals/_default/Logs/&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;datePattern&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yyyy.MM.dd'.log.resources'&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;rollingStyle&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Date&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;staticLogFileName&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;false&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;appendToFile&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;maximumFileSize&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10MB&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;maxSizeRollBackups&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;lockingModel&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;log4net.Appender.FileAppender+MinimalLock&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;layout&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;log4net.Layout.PatternLayout&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;conversionPattern&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%date [%property{log4net:HostName}][Thread:%thread][%level] %logger - %message%newline&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;locationInfo&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/layout&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/appender&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;root&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;level&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Error&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;appender-ref&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ref=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;RollingFile&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/root&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/log4net&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Remember: you can find all these files in ~/portals/_default/logs/&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 08 Aug 2017 00:00:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/code/logging-to-the-dnn-event-log </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/code/logging-to-the-dnn-event-log </guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
+        <title>Ventrian modules now free on GitHub</title>
+        <description>&lt;p&gt;It’s been a great honour to participate in the DNN community. What started out as a simple coding hobby allowed me to reach a &lt;a href=&quot;http://www.dnnsoftware.com/community&quot;&gt;global community of developers&lt;/a&gt; and &lt;a href=&quot;http://dnn-connect.org/&quot;&gt;build lasting friendships&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Part of that interaction was developing a suite of modules that I initially needed for myself. These needs included modules for blogging (news articles), real estate firms (property agent) and image management (simple gallery).&lt;/p&gt;
+
+&lt;p&gt;The success of shareable extensions and the explosive growth of DNN at the time (2004-20007) meant that I could no longer keep up with the demands on my own personal site (where I hosted free versions of these modules).&lt;/p&gt;
+
+&lt;p&gt;In 2005, I registered ventrian.com and offered them for sale as part of a low-cost subscription. Since that time, I’ve extended the modules and only raised the price once (the initial price for a yearly subscription was &lt;strong&gt;$35&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Helping others by providing website building blocks is a fantastic feeling!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/dnn-2004-growth.png&quot; alt=&quot;DNN 2004-2007 growth explosive!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, over time the interest in DotNetNuke as a platform has moved towards the enterprise space and the interest in these type of custom extensions has certainly diminished.&lt;/p&gt;
+
+&lt;p&gt;For this primary reason it now makes sense to take the existing modules off ventrian.com and move them to &lt;a href=&quot;https://github.com/ventrian&quot;&gt;GitHub&lt;/a&gt; for anyone that wishes to extend them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ventrian&quot;&gt;https://github.com/ventrian&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;They are all licensed under MIT.&lt;/p&gt;
+
+&lt;p&gt;Thank you again for all the years of loyal support!&lt;/p&gt;
+
+&lt;p&gt;FYI, I am still working &lt;a href=&quot;https://f5.com/&quot;&gt;daily in DNN&lt;/a&gt; (and many other technologies). If you need to contact me, you will find me on &lt;a href=&quot;https://twitter.com/sj_mcculloch&quot;&gt;Twitter&lt;/a&gt; or &lt;a href=&quot;https://www.linkedin.com/in/sjmcculloch/&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 20 Jul 2017 00:00:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/code/ventrian-modules-now-on-github </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/code/ventrian-modules-now-on-github </guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
+        <title>Kelly Clarkson's 'My December' 10 year review</title>
+        <description>&lt;p&gt;It’s been 10 years since the release of Kelly Clarkson’s &lt;em&gt;My December&lt;/em&gt;, a personal favourite of mine and many other fans of her work. It followed the massive commercial success of her previous albums (&lt;em&gt;Thankful&lt;/em&gt; and &lt;em&gt;Breakaway&lt;/em&gt;) and represented a shift from &lt;strong&gt;pop rock&lt;/strong&gt; to &lt;strong&gt;alternative rock&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/feature-my-december.jpg&quot; alt=&quot;Kelly Clarkson My December&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;My December&lt;/em&gt; is a sombre and often dark album that reflects the mood of Kelly at the time. Ten years on my thoughts are it’s her best work and this article reveals my top 5 songs from the album.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;owever, it’s launch was mired by a bitter fued with her record label over the commercial quality of the album. Kelly stood her ground and eventually released the album telling the record label that “it’s my face, it’s my time”.&lt;/p&gt;
+
+&lt;p&gt;It never reached the commercial heights of &lt;em&gt;Breakaway&lt;/em&gt; but for many fans (including myself) it’s their favourite. Here are some of my top tracks from the album.&lt;/p&gt;
+
+&lt;h2 id=&quot;never-again&quot;&gt;Never Again&lt;/h2&gt;
+
+&lt;p&gt;This song has an appealing vindictive tone - it really is about putting your trust in someone and getting let down (an experience most people can relate to).&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GVYesEpMr84&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;maybe&quot;&gt;Maybe&lt;/h2&gt;
+
+&lt;p&gt;Perhaps my all time favourite Kelly Clarkson song. We can all relate to &lt;em&gt;Maybe&lt;/em&gt; one day getting the thing we want.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VwkZ0ro1dh4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;irvine&quot;&gt;Irvine&lt;/h2&gt;
+
+&lt;p&gt;I wasn’t a fan of thing song originally but over time it has really grown on me. It was written as a prayer written at the lowest point of her life after cancelling a meet’n’greet while performing at the Irvine Verizon Wireless Amphitheatre.&lt;/p&gt;
+
+&lt;p&gt;Clarkson told The Daily Mail (June 22, 2007): “I had reached my lowest point. I thought: ‘I don’t want to smile or talk about myself, or do a photo shoot. I don’t want to do anything.’ Four or five years straight of doing this stuff caught up on me. Everyone wanted to keep it going and I couldn’t. Even though I love my job, I couldn’t do it all the time.”&lt;/p&gt;
+
+&lt;p&gt;It’s never been sung live even though it is a favourite among fans.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/dCalNw4wSjs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;judas&quot;&gt;Judas&lt;/h2&gt;
+
+&lt;p&gt;An extremely catchy song that was initially favourite on the first listen of &lt;em&gt;My December&lt;/em&gt;. It’s edginess makes it great to run to!&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/m7E8sB_NcAI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;sober&quot;&gt;Sober&lt;/h2&gt;
+
+&lt;p&gt;As someone that has struggled with one form of addiction over time (albeit minor things like food and gaming), this song is about survival and knowing what to do when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;Kelly states “The whole point of that song is, the temptation is there, but I’m not going to give in to it.”&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mQs0IwqwDaE&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Fri, 14 Jul 2017 00:00:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/music/my-december-10-year-anniversary </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/music/my-december-10-year-anniversary </guid>
+        
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>Tips to prepare for Madden NFL 18</title>
+        <description>&lt;p&gt;As the Madden 17 season winds down, defensive and offensive schemes have been well established. A series of unrealistic blitzes are well known (via our friends at YouTube) and even worse, offensive glitches like ‘swerving’ have been thoroughly abused.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/feature-madden.jpg&quot; alt=&quot;Madden 18 Tips&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lucky for us, the release of madden 18 should put an end to all this and the playerbase will need to adapt (hopefully to a new glitchfree engine!). With that in mind, let’s look at how you can prepare for Madden 18 by adjusting your playstyle today.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;stop-swerving&quot;&gt;Stop Swerving&lt;/h2&gt;
+
+&lt;p&gt;The swerve glitch involves selecting a receiver while the ball is in mid-flight and ‘swerving’ him away from the defender. This motion causes the defender to also swerve giving you a free path back to the ball for an easy catch. It is a glitch that isn’t fixed in Madden 17 but has been rectified for Madden 18.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/swerve.jpg&quot; alt=&quot;Madden 17 Swerve&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For many H2H players it makes up a large portion of their offense (and unfortunately &lt;a href=&quot;https://twitter.com/volterax?lang=en&quot;&gt;some pros&lt;/a&gt; as well!). Since it won’t be around in Madden 18, it’s time to come up with a new scheme and actually play football concepts.&lt;/p&gt;
+
+&lt;p&gt;Bottom line, &lt;strong&gt;STOP SWERVING&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;no-more-ball-hawk&quot;&gt;No More Ball-Hawk&lt;/h2&gt;
+
+&lt;p&gt;Let’s face it, “usering” linebackers was incredibly easy in Madden 17. Your opponent would snap the ball, you would hold down Y and run around the field hoping to intercept. Pretty simple right?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/wagner-ball-hawk.jpg&quot; alt=&quot;Madden 17 Ball hawk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well in madden 18, they have removed the ball-hawk feature. Holding down Y (or playstation equivalent) will result in an early jump and leave your linebacker looking foolish. Adjust your gameplay by only going for the interception once the ball is thrown.&lt;/p&gt;
+
+&lt;h2 id=&quot;hit-stick-changes&quot;&gt;Hit-Stick Changes&lt;/h2&gt;
+
+&lt;p&gt;This change is potentially my favourite.&lt;/p&gt;
+
+&lt;p&gt;At high levels of play any user tackle would instantly be a “hit-stick” animation. Players would press the tackle button (as opposed to using the actually hit-stick) and that would lock on to the ball carrier via heat-seeker inducing a hit-stick animation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/hit-stick.jpg&quot; alt=&quot;Madden Hit Stick&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, these tackles &lt;strong&gt;should be risky&lt;/strong&gt; and not occur as frequently as they do in Madden 17. To make this happen, EA has put the emphasis on the higher risk usage of the hit-stick and removed it from the heat seaking tackle button. Bravo!&lt;/p&gt;
+
+&lt;h2 id=&quot;stop-using-cross-man-defense&quot;&gt;Stop using Cross-Man Defense&lt;/h2&gt;
+
+&lt;p&gt;Another great change is the removal of cross man, a popular defensive adjustment in Madden 17. This technique involved manually adjusting users to man coverage to the opposing side of the field. When a receiver would cross near the manned up side (e.g. drag route), the defender would make an immacculate 180 degree turn and shut-down the receiver.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/dez-x.jpg&quot; alt=&quot;No More Cross Man Madden 18&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Obviously this isn’t a real strategy in football so EA have removed the ability to do this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you can still man linebackers on wide receivers but this is typically only half the width of the field.&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-rely-100-on-dollar-or-dime&quot;&gt;Don’t rely 100% on Dollar or Dime&lt;/h2&gt;
+
+&lt;p&gt;One of the most frustrating aspects of Madden 17 this year was opponents that would &lt;a href=&quot;https://www.youtube.com/watch?v=4v3Mk30nXy4&quot;&gt;spam dollar defense all game&lt;/a&gt;. Similar to cross man, this isn’t a viable real life football strategy.&lt;/p&gt;
+
+&lt;p&gt;The dollar defense consists of 2 LBs, 3 Lineman and 6 DBs. When you see this defense, it should be weak against the run right? It has an absence of lineman and/or linebackers replacing them with smaller faster defensive backs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/post-assets/dollar-defense-formation.jpg&quot; alt=&quot;Dollar Defense in Madden&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As it turned out, most people could stick in this defensive coverage and blitz some of the backs to provide excellent run stopping capability. Fortunately we are told that if you run either Dime or Dollar in Madden 18 you’ll get pancaked similar to rushing only 2 in Madden 17. Great!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;So there you have it, a list of playstyle adjustments that will make you a better player in Madden 18. Yes, there will be glitches and cheese plays in the new Madden but it is getting better each year and personally, I can’t wait!&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 10 Jun 2017 12:36:00 +1000</pubDate>
+        <link>https://www.smcculloch.com/gaming/tips-to-prepare-for-madden-18 </link>
+        <guid isPermaLink="true">https://www.smcculloch.com/gaming/tips-to-prepare-for-madden-18 </guid>
+        
+        
+        <category>gaming</category>
+        
+      </item>
+    
+  </channel>
+</rss>

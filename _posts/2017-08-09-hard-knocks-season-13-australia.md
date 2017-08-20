@@ -24,3 +24,6 @@ Episode 1 is available to stream anytime on nfl.com on this [link](http://www.nf
 
 Alternatively, it will be on __7Mate__ @ Wednesday 23 August 12:00am - 1:00am
 
+## Episode 2
+
+__7Mate__ @ Tuesday 29 August 12:00am - 1:00am

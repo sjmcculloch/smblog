@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-08-09
-title: "How to watch NFL Hard Knocks in Australia"
+title: "How to watch NFL Hard Knocks in Australia 2017"
 description: Australia show times for Hard Knocks Season 13 featuring the Tampa Bay Buccaneers.
 comments: true
 category: 
@@ -22,8 +22,8 @@ Here are the ways to watch each episode.
 
 Episode 1 is available to stream anytime on nfl.com on this [link](http://www.nfl.com/videos/nfl-network-hard-knocks/0ap3000000827378/Watch-the-full-Hard-Knocks-season-premiere).
 
-Alternatively, it will be on __7Mate__ @ Wednesday 23 August 12:00am - 1:00am
+Alternatively, it will be on __7Mate__ @ Wednesday 23 August 12:00am - 1:01am
 
 ## Episode 2
 
-__7Mate__ @ Tuesday 29 August 12:00am - 1:00am
+__7Mate__ @ Tuesday 29 August 12:00am - 1:10am

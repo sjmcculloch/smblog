@@ -27,3 +27,11 @@ Alternatively, it will be on __7Mate__ @ Wednesday 23 August 12:00am - 1:01am
 ## Episode 2
 
 __7Mate__ @ Tuesday 29 August 12:00am - 1:10am
+
+## Episode 3
+
+__7Mate__ @ Tuesday 5 September 12:00am - 1:00am
+
+## Episode 4
+
+__7Mate__ @ Wednesday 13 September 12:45am - 1:45am

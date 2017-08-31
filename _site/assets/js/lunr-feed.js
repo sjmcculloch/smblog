@@ -21,7 +21,7 @@ var index = lunr(function () {
     index.add({
       title: "How to watch NFL Hard Knocks in Australia 2017",
       category: ["sport"],
-      content: "Hard Knocks is a reality sports documentary television series produced by NFL Films and HBO. It’s thirteenth season features the Tampa Bay Buccaneers.\n\n\n\nThe Seven Network owns the current rights to NFL broadcasts within Australia and that includes Hard Knocks which broadcasts for free on 7Mate.\n\nHere are the ways to watch each episode.\n\n\n\nEpisode 1\n\nEpisode 1 is available to stream anytime on nfl.com on this link.\n\nAlternatively, it will be on 7Mate @ Wednesday 23 August 12:00am - 1:01am\n\nEpisode 2\n\n7Mate @ Tuesday 29 August 12:00am - 1:10am\n",
+      content: "Hard Knocks is a reality sports documentary television series produced by NFL Films and HBO. It’s thirteenth season features the Tampa Bay Buccaneers.\n\n\n\nThe Seven Network owns the current rights to NFL broadcasts within Australia and that includes Hard Knocks which broadcasts for free on 7Mate.\n\nHere are the ways to watch each episode.\n\n\n\nEpisode 1\n\nEpisode 1 is available to stream anytime on nfl.com on this link.\n\nAlternatively, it will be on 7Mate @ Wednesday 23 August 12:00am - 1:01am\n\nEpisode 2\n\n7Mate @ Tuesday 29 August 12:00am - 1:10am\n\nEpisode 3\n\n7Mate @ Tuesday 5 September 12:00am - 1:00am\n\nEpisode 4\n\n7Mate @ Wednesday 13 September 12:45am - 1:45am\n",
       tags: [],
       id: 1
     });

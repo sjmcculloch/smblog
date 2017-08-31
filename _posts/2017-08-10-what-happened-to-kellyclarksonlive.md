@@ -4,6 +4,7 @@ date: 2017-08-10
 title: "What happened to kellyclarksonlive.com?"
 description: Can't get to kellyclarksonlive.com? We've got the links to all her live music.
 comments: true
+imageurl: /images/post-assets/kelly-clarkson-live.jpg
 category: 
 - music
 ---

@@ -18,8 +18,12 @@
     {% endif %}
     <meta property="og:url" content="{{page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.shareurl}}" />
 
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
+    {% if page.imageurl %}
+    <meta property="og:image" content="{{ page.imageurl | prepend: site.shareurl }}" />
+    {% endif %}
+    {% if page.imageurl %}
+    <meta name="twitter:image" content="{{ page.imageurl | prepend: site.shareurl }}" />
+    {% endif %}
 
     <meta name="author" content="{{site.name}}" />
 

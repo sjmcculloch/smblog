@@ -55,3 +55,11 @@ As someone that has struggled with one form of addiction over time (albeit minor
 Kelly states "The whole point of that song is, the temptation is there, but I'm not going to give in to it."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mQs0IwqwDaE" frameborder="0" allowfullscreen></iframe>
+
+## Bonus Tracks on the Deluxe Version
+
+Make sure you get the deluxe version of My December for the two bonus tracks:
+
+1. Dirty Little Secret - ([Listen on YouTube](https://www.youtube.com/watch?v=R9KHlt4JiIs))
+2. Not Today - ([Listen on YouTube](https://www.youtube.com/watch?v=6HEHakBVljI))
+

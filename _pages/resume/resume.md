@@ -5,7 +5,7 @@ pagetitle: "Scott McCulloch"
 permalink: "/resume/"
 ---
 
-Results-oriented Systems Analyst with 18 years experience in design, implementation and testing of enterprise applications. 
+Results-oriented Software Engineer with 18 years experience in design, implementation and testing of enterprise applications. 
 
 ## Objective
 

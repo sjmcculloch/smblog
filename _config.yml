@@ -3,7 +3,7 @@ name: Scott McCulloch
 title: Scott McCulloch - Full Stack .Net Developer
 job_title: Full Stack .Net Developer
 email: smcculloch@gmail.com
-description: I'm a web coder that enjoys sport, gaming and listening to music. Follow me on Twitter or drop me a line.
+description: I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below.
 avatar: /images/scott-mcculloch.jpg
 favicon: /favicon.ico
 twitter_handler: sj_mcculloch
@@ -12,7 +12,7 @@ disqus: smcculloch
 
 # Social Accounts
 social_networks:
--  { name: facebook, url: 'http://facebook.com/sjmcculloch' }
+-  { name: facebook, url: '' }
 -  { name: twitter, url: 'http://twitter.com/sj_mcculloch' }
 -  { name: instagram, url: '' }
 -  { name: google-plus, url: '' }
@@ -20,7 +20,7 @@ social_networks:
 -  { name: skype, url: '' }
 -  { name: github, url: '' }
 -  { name: codepen, url: '' }
--  { name: stack-overflow, url: '' }
+-  { name: stack-overflow, url: 'https://stackoverflow.com/users/1536793/scott-mcculloch' }
 -  { name: dribbble, url: '' }
 -  { name: behance, url: '' }
 -  { name: pinterest, url: '' }

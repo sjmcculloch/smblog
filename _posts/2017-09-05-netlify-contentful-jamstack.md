@@ -44,13 +44,15 @@ The content modelling process allows you to build entities and relate them to ea
 
 ![Contentful Blogging Entities](/images/post-assets/contentful-entities.png)
 
-Examining the __Post__ entity, you can see it's made up of a number of custom fields we have created and I've related it to the Author/Category entities.
+Examining the __Post__ entity, you can see it's made up of a number of custom fields and I've related it to the Author/Category entities.
 
 ![Contentful Post Entity](/images/post-assets/contentful-post.png)
 
-Now that the content model is setup, we can visit the __Content__ tab and add an article. You can even give clients access to maintain content only. Did I also mention it was [free up to 1M API calls a month](https://www.contentful.com/pricing/) and all media is also stored on a CDN (1TB limit!).
+Now that the content model is setup, we can visit the __Content__ tab and add a __Post__. 
 
 ![Contentful New Post](/images/post-assets/contentful-new-post.png)
+
+__Pro Tip__: You can give clients access to add/edit content only and did I also mention it was [free up to 1M API calls a month](https://www.contentful.com/pricing/) with all media is also stored on a CDN (1TB limit!).
 
 ## Javascript & Markup - Building the Site
 
@@ -68,7 +70,7 @@ Netlify in one word is __Awesome__! It offers continuous deployment. It will bui
 
 ![Netlify Build](/images/post-assets/netlify-build.png)
 
-I mentioned __Continuous Deployment__ earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You would give editors access to contentful and sit back as your site is generated after each change. You are getting the best of a dynamic CMS without the resource hungry headaches. 
+I mentioned __Continuous Deployment__ earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You would give editors access to contentful and sit back as your site is generated after each change. You are getting the best of a dynamic CMS without all the headaches! 
 
 
 ![Contentful Netlify Workflow](/images/post-assets/contentful-netlify-workflow.svg)
@@ -77,8 +79,8 @@ I mentioned __Continuous Deployment__ earlier. Through the use of webhooks we ca
 
 The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for the Madden console game. 
 
-It's hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and apis via Global CDNs (thanks Contentful). We've secured it via HTTPS and become very resilient to attack as it's only HTML hosted on Global CDNs. Editors and developers have also been integrated into a continuous deployment model from the start. 
+It's hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and APIs via Global CDNs (thanks Contentful). We've secured it via HTTPS and become very resilient to attack as it's only HTML hosted on Global CDNs. Editors and developers are also integrated into a continuous deployment model from the start. 
 
-The JAMstack is a compelling architecture, combine that with Contentful and Netlify, it's worth considering for your next web project.
+The JAMstack is a compelling and modern web architecture. If you combine it with Contentful and Netlify, it's worth considering for your next web project.
 
 

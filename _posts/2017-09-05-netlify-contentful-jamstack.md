@@ -2,7 +2,7 @@
 layout: post
 date: 2017-09-05
 title: "Netlify & Contentful - JAMstack Compadres"
-description: 
+description: "A look at building a JAMstack architecture with Netlify and Contentful to construct a highly performant and secure website."
 comments: true
 imageurl: /images/post-assets/jamstack.png
 category: 

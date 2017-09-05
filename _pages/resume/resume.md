@@ -1,11 +1,11 @@
 ---
 layout: page
 title:  "Resume"
-pagetitle: "Scott McCulloch"
+pagetitle: "Scott McCulloch - Software Engineer Resume"
 permalink: "/resume/"
 ---
 
-Results-oriented Software Engineer with 18 years experience in design, implementation and testing of enterprise applications. 
+Results-oriented Software Engineer with considerable experience in design, implementation and testing of enterprise applications. 
 
 ## Objective
 
@@ -29,12 +29,12 @@ To obtain a position as a developer and/or analyst in a fun, fast paced, cutting
 
 - Sql Server, C#, ASP.NET Web Forms, Web Services, BizTalk Server
 - Developed proprietary application framework used by 50+ devs
-- Developed cost model tool to standardise estimations 
+- Developed cost model tool to standardise estimates
 - Regular speaker at .NET User Groups
 
 #### .NET Developer - Wollongong City Council (2002)
 
-- Developed internet & intranet sites - [wwww.wollongong.nsw.gov.au](http://www.wollongong.nsw.gov.au)
+- Developed internet & intranet sites - [www.wollongong.nsw.gov.au](http://www.wollongong.nsw.gov.au)
 
 #### Graduate Developer - BHP IT (1999-2001)
 

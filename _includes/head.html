@@ -4,7 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="RrwdQ7lqIDkCUPASkAuJwoZzhdoxniZSy7KF8qeTAlI" />
 
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }} {% if site.job_title %}- {{site.job_title | escape }} {% endif %}{% endif %}</title>
+    <title>
+        {% if page.pagetitle %}
+            {{ page.pagetitle | escape }}
+        {% else %}
+            {% if page.title %}
+                {{ page.title | escape }}
+            {% else %}
+                {{ site.name | escape }} 
+                {% if site.job_title %}- {{site.job_title | escape }} {% endif %}
+            {% endif %}
+        {% endif %}
+    </title>
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }} {% if site.job_title %}- {{site.job_title | escape }} {% endif %}{% endif %}" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }} {% if site.job_title %}- {{site.job_title | escape }} {% endif %}{% endif %}" />
 

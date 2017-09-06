@@ -65,6 +65,8 @@ Retrieving data is trivial thanks to the [library available in NPM](https://www.
 
 {% highlight javascript %}
 
+const nunjucks = require('gulp-nunjucks');
+
 var client = contentful.createClient({
   space: 'nso7hcqr5tuu', 
   accessToken: '5f6e61df9e7b247fcbaf7e501e93f1c97756279dcc91742a62139beab475f854'
@@ -84,28 +86,20 @@ gulp.task('get:posts', () =>
     )
 );
 
-// Compile the views with the data found in the api sepcified in
-// the template's front-matter.
-// Additional data can be passed in the front-matter
-gulp.task('generate', () =>
-  gulp.src(['views/*.html'])
-    .pipe(data(function(file) {
-      var content = fm(String(file.contents));
-      var apiData = {};
-      var apiUrls = []; // for our configs file in view.js
-      for (var i = 0; i < content.attributes.api.length; i++) {
-        var source = content.attributes.api[i].split(".json")[0].split("/")[1]; // better with a regexp.
-        apiUrls.push(content.attributes.api[i]);
-        apiData[source] = require("./" + content.attributes.api[i]);
-      }
-      content.attributes.api = apiData;
-      content.attributes.baseTemplate = "./layouts/base.html";
-      return content.attributes;
-    }))
-    .pipe(nunjucks.compile(null, {"env" : env}))
-    .pipe(prettyUrl())
-    .pipe(gulp.dest('dist', {overwrite: true}))
-);
+{% endhighlight %}
+
+And then compiling it with Nunjucks is fairly straight forward:
+
+{% highlight javascript %}
+
+var env = new nunj.Environment(new nunj.FileSystemLoader('views', { noCache: true, watch: false }), { autoescape: false }); 
+env.addFilter('date', dateFilter);
+
+var posts = JSON.parse( fs.readFileSync('./api/posts.json', { encoding: 'utf8' }));
+for (var item = 0; item < posts.length; item++) {
+	var res = env.render('pages/post.html', posts[item]);
+	fs.writeFile('dist/' + posts[item].slug + '.html', res);
+}
 
 {% endhighlight %}
 
@@ -115,9 +109,11 @@ __Note__: you can get the space/accesstoken from Contentful's admin area.
 
 Netlify in one word is __Awesome__! It offers continuous deployment, builds our site, hosts it on a global CDN and secures it via HTTPS. Furthermore, [it's free for most sites](https://www.netlify.com/pricing/). 
 
+You can point it at a github repository, it will retrieve the source, build and host it for you. 
+
 ![Netlify Build](/images/post-assets/netlify-build.png)
 
-I mentioned __Continuous Deployment__ earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You are getting the best of a dynamic CMS without all the headaches! 
+Furthermore, through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You are getting the best of a dynamic CMS without all the headaches! 
 
 ![Contentful Netlify Workflow](/images/post-assets/contentful-netlify-workflow.svg)
 

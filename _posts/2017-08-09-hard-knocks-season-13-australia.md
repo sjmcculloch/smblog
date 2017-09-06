@@ -2,7 +2,7 @@
 layout: post
 date: 2017-08-09
 title: "How to watch NFL Hard Knocks in Australia 2017"
-description: 2017 Australia show times for Hard Knocks Season 13 featuring the Tampa Bay Buccaneers.
+description: 2017 Australia show times for Hard Knocks featuring the Tampa Bay Buccaneers.
 comments: true
 category: 
 - sport
@@ -35,3 +35,7 @@ __7Mate__ @ Tuesday 5 September 12:00am - 1:00am
 ## Episode 4
 
 __7Mate__ @ Wednesday 13 September 12:45am - 1:45am
+
+## Episode 5
+
+__7Mate__ @ Wednesday 20 September 12:00am - 1:05am

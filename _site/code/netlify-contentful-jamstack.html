@@ -16,9 +16,9 @@
     <meta property="og:title" content="Netlify &amp; Contentful - JAMstack Compadres" />
     <meta name="twitter:title" content="Netlify &amp; Contentful - JAMstack Compadres" />
 
-    <meta name="description" content="I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below.">
-    <meta name="description" property="og:description" content="I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below." />
-    <meta name="twitter:description" content="I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below." />
+    <meta name="description" content="A look at building a JAMstack architecture with Netlify and Contentful to construct a highly performant and secure website.">
+    <meta name="description" property="og:description" content="A look at building a JAMstack architecture with Netlify and Contentful to construct a highly performant and secure website." />
+    <meta name="twitter:description" content="A look at building a JAMstack architecture with Netlify and Contentful to construct a highly performant and secure website." />
 
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -202,7 +202,7 @@
 
 <p><img src="/images/post-assets/jamstack.png" alt="Jamstack" /></p>
 
-<p>I’ll explore this architecture as I put together a sample website.</p>
+<p>I’ll explore this architecture as I put together a sample website using <a href="http://www.netlify.com">Netlify</a> &amp; <a href="https://www.contentful.com">Contentful</a></p>
 
 <!--more-->
 
@@ -224,19 +224,21 @@
 
 <p>When I start an application or website, I always start with content modelling. Fortunately new services such as <a href="https://www.contentful.com/">Contentful</a> make this process a breeze.</p>
 
-<p>Contentful is all about creating content and exposing it through APIs. You may have heard of the term <strong>Headless CMS</strong> which means there is no front end (head) for content as it’s only exposed through RESTful services. This is a perfect fit for the JAMstack architecture.</p>
+<p>Contentful is all about modelling content, providing an interface to add content and then exposing it through APIs. You may have heard of the term <a href="https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/">Headless CMS</a> which means there is no front end (head) for content, instead it is exposed through RESTful services. This is a perfect fit for the JAMstack architecture.</p>
 
-<p>The content modelling process allows you to build entities and relate them to each other. In our example, we’ll have the typical <strong>Author</strong>, <strong>Category</strong> and <strong>Post</strong> entities represent our blogging website.</p>
+<p>The content modelling process allows you to build entities and relate them to each other. In our example, we’ll have the typical <strong>Author</strong>, <strong>Category</strong> and <strong>Post</strong> entities that represent our blogging website.</p>
 
 <p><img src="/images/post-assets/contentful-entities.png" alt="Contentful Blogging Entities" /></p>
 
-<p>Examining the <strong>Post</strong> entity, you can see it’s made up of a number of custom fields we have created and I’ve related it to the Author/Category entities.</p>
+<p>Examining the <strong>Post</strong> entity, you can see it’s made up of a number of custom fields and I’ve related it to the Author entity.</p>
 
 <p><img src="/images/post-assets/contentful-post.png" alt="Contentful Post Entity" /></p>
 
-<p>Now that the content model is setup, we can visit the <strong>Content</strong> tab and add an article. You can even give clients access to maintain content only. Did I also mention it was <a href="https://www.contentful.com/pricing/">free up to 1M API calls a month</a> and all media is also stored on a CDN (1TB limit!).</p>
+<p>Now that the content model is setup, we can visit the <strong>Content</strong> tab and add a <strong>Post</strong>.</p>
 
 <p><img src="/images/post-assets/contentful-new-post.png" alt="Contentful New Post" /></p>
+
+<p><strong>Pro Tip</strong>: You can give clients access to add/edit content only. It is also <a href="https://www.contentful.com/pricing/">free up to 1M API calls a month</a> with all media is stored on a CDN (1TB limit!).</p>
 
 <h2 id="javascript--markup---building-the-site">Javascript &amp; Markup - Building the Site</h2>
 
@@ -244,27 +246,71 @@
 
 <p>To do this, I’ll use the <a href="https://gulpjs.com/">Gulp build tool</a> to run our <strong>Javascript</strong> and mesh it with <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> as our templating engine for <strong>Markdown</strong>.</p>
 
-<p>I won’t go into the details but you can see <a href="https://github.com/sjmcculloch/mutcoins/blob/master/gulpfile.js">my gulp file on github</a>. In essence, it reads from Contentful and then generates the site using the nunjucks templates.</p>
+<p>I won’t go into too many details but you can see <a href="https://github.com/sjmcculloch/mutcoins/blob/master/gulpfile.js">my gulp file on github</a>. In essence, it reads from Contentful and then generates the site using the nunjucks templates.</p>
 
-<p>We’ll then make sure our gulp file and templates are checked in to <a href="https://github.com/sjmcculloch/mutcoins">Github</a>.</p>
+<p>Retrieving data is trivial thanks to the <a href="https://www.npmjs.com/package/contentful-management">library available in NPM</a>:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">client</span> <span class="o">=</span> <span class="nx">contentful</span><span class="p">.</span><span class="nx">createClient</span><span class="p">({</span>
+  <span class="na">space</span><span class="p">:</span> <span class="s1">'nso7hcqr5tuu'</span><span class="p">,</span> 
+  <span class="na">accessToken</span><span class="p">:</span> <span class="s1">'5f6e61df9e7b247fcbaf7e501e93f1c97756279dcc91742a62139beab475f854'</span>
+<span class="p">});</span>
+
+<span class="c1">// Get the posts data from the cloud CMS and stash it locally</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'get:posts'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span>
+  <span class="nx">client</span><span class="p">.</span><span class="nx">getEntries</span><span class="p">({</span><span class="s1">'content_type'</span><span class="p">:</span><span class="s1">'2wKn6yEnZewu2SCCkus4as'</span><span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span>
+      <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">dataObject</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">item</span> <span class="o">&lt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">item</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">dataObject</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">resp</span><span class="p">.</span><span class="nx">items</span><span class="p">[</span><span class="nx">item</span><span class="p">].</span><span class="nx">fields</span><span class="p">)</span>
+        <span class="p">}</span>
+        <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s1">'api/posts.json'</span><span class="p">,</span> <span class="nx">stringify</span><span class="p">(</span><span class="nx">dataObject</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span> 
+      <span class="p">}</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">// Compile the views with the data found in the api sepcified in</span>
+<span class="c1">// the template's front-matter.</span>
+<span class="c1">// Additional data can be passed in the front-matter</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'generate'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="s1">'views/*.html'</span><span class="p">])</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">data</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="nx">fm</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">contents</span><span class="p">));</span>
+      <span class="kd">var</span> <span class="nx">apiData</span> <span class="o">=</span> <span class="p">{};</span>
+      <span class="kd">var</span> <span class="nx">apiUrls</span> <span class="o">=</span> <span class="p">[];</span> <span class="c1">// for our configs file in view.js</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">api</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">source</span> <span class="o">=</span> <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">api</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">".json"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">split</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span> <span class="c1">// better with a regexp.</span>
+        <span class="nx">apiUrls</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">api</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+        <span class="nx">apiData</span><span class="p">[</span><span class="nx">source</span><span class="p">]</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"./"</span> <span class="o">+</span> <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">api</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+      <span class="p">}</span>
+      <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">api</span> <span class="o">=</span> <span class="nx">apiData</span><span class="p">;</span>
+      <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">.</span><span class="nx">baseTemplate</span> <span class="o">=</span> <span class="s2">"./layouts/base.html"</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nx">content</span><span class="p">.</span><span class="nx">attributes</span><span class="p">;</span>
+    <span class="p">}))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">nunjucks</span><span class="p">.</span><span class="nx">compile</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="p">{</span><span class="s2">"env"</span> <span class="p">:</span> <span class="nx">env</span><span class="p">}))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">prettyUrl</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'dist'</span><span class="p">,</span> <span class="p">{</span><span class="na">overwrite</span><span class="p">:</span> <span class="kc">true</span><span class="p">}))</span>
+<span class="p">);</span></code></pre></figure>
+
+<p><strong>Note</strong>: you can get the space/accesstoken from Contentful’s admin area.</p>
 
 <h2 id="netlify-as-a-build--hosting-service">Netlify as a Build &amp; Hosting Service</h2>
 
-<p>Netlify in one word is <strong>Awesome</strong>! It offers continuous deployment. It will build our site, host it on their CDN servers and secure it via HTTPS. Furthermore, <a href="https://www.netlify.com/pricing/">it’s free for most sites</a>.</p>
+<p>Netlify in one word is <strong>Awesome</strong>! It offers continuous deployment. It will build our site, host it on a global CDN and secure it via HTTPS. Furthermore, <a href="https://www.netlify.com/pricing/">it’s free for most sites</a>.</p>
 
 <p><img src="/images/post-assets/netlify-build.png" alt="Netlify Build" /></p>
 
-<p>I mentioned <strong>Continuous Deployment</strong> earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You would give editors access to contentful and sit back as your site is generated after each change. You are getting the best of a dynamic CMS without the resource hungry headaches.</p>
+<p>I mentioned <strong>Continuous Deployment</strong> earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You are getting the best of a dynamic CMS without all the headaches!</p>
 
 <p><img src="/images/post-assets/contentful-netlify-workflow.svg" alt="Contentful Netlify Workflow" /></p>
 
 <h2 id="summary">Summary</h2>
 
-<p>The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for the Madden console game.</p>
+<p>The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for Madden NFL.</p>
 
-<p>It’s hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and apis via Global CDNs (thanks Contentful). We’ve secured it via HTTPS and become very resilient to attack as it’s only HTML hosted on Global CDNs. Editors and developers have also been integrated into a continuous deployment model from the start.</p>
+<p>It’s hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and APIs via Global CDNs (thanks Contentful). We’ve secured it via HTTPS and become very resilient to attack as it’s only HTML hosted on Global CDNs. Editors and developers are also integrated into a continuous deployment model from the start.</p>
 
-<p>The JAMstack is a compelling architecture, combine that with Contentful and Netlify, it’s worth considering for your next web project.</p>
+<p>The JAMstack is a compelling and modern web architecture. If you combine it with Contentful and Netlify, it’s worth considering for your next web project.</p>
 
 
     </div>

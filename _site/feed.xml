@@ -5,8 +5,8 @@
     <description>I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below.</description>
     <link>https://www.smcculloch.com/</link>
     <atom:link href="https://www.smcculloch.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Sep 2017 17:07:20 +1000</pubDate>
-    <lastBuildDate>Tue, 05 Sep 2017 17:07:20 +1000</lastBuildDate>
+    <pubDate>Wed, 06 Sep 2017 10:16:04 +1000</pubDate>
+    <lastBuildDate>Wed, 06 Sep 2017 10:16:04 +1000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -17,7 +17,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/jamstack.png&quot; alt=&quot;Jamstack&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I’ll explore this architecture as I put together a sample website.&lt;/p&gt;
+&lt;p&gt;I’ll explore this architecture as I put together a sample website using &lt;a href=&quot;http://www.netlify.com&quot;&gt;Netlify&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.contentful.com&quot;&gt;Contentful&lt;/a&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -39,19 +39,21 @@
 
 &lt;p&gt;When I start an application or website, I always start with content modelling. Fortunately new services such as &lt;a href=&quot;https://www.contentful.com/&quot;&gt;Contentful&lt;/a&gt; make this process a breeze.&lt;/p&gt;
 
-&lt;p&gt;Contentful is all about creating content and exposing it through APIs. You may have heard of the term &lt;strong&gt;Headless CMS&lt;/strong&gt; which means there is no front end (head) for content as it’s only exposed through RESTful services. This is a perfect fit for the JAMstack architecture.&lt;/p&gt;
+&lt;p&gt;Contentful is all about modelling content, providing an interface to add content and then exposing it through APIs. You may have heard of the term &lt;a href=&quot;https://www.contentful.com/r/knowledgebase/headless-and-decoupled-cms/&quot;&gt;Headless CMS&lt;/a&gt; which means there is no front end (head) for content, instead it is exposed through RESTful services. This is a perfect fit for the JAMstack architecture.&lt;/p&gt;
 
-&lt;p&gt;The content modelling process allows you to build entities and relate them to each other. In our example, we’ll have the typical &lt;strong&gt;Author&lt;/strong&gt;, &lt;strong&gt;Category&lt;/strong&gt; and &lt;strong&gt;Post&lt;/strong&gt; entities represent our blogging website.&lt;/p&gt;
+&lt;p&gt;The content modelling process allows you to build entities and relate them to each other. In our example, we’ll have the typical &lt;strong&gt;Author&lt;/strong&gt;, &lt;strong&gt;Category&lt;/strong&gt; and &lt;strong&gt;Post&lt;/strong&gt; entities that represent our blogging website.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/contentful-entities.png&quot; alt=&quot;Contentful Blogging Entities&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Examining the &lt;strong&gt;Post&lt;/strong&gt; entity, you can see it’s made up of a number of custom fields we have created and I’ve related it to the Author/Category entities.&lt;/p&gt;
+&lt;p&gt;Examining the &lt;strong&gt;Post&lt;/strong&gt; entity, you can see it’s made up of a number of custom fields and I’ve related it to the Author entity.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/contentful-post.png&quot; alt=&quot;Contentful Post Entity&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Now that the content model is setup, we can visit the &lt;strong&gt;Content&lt;/strong&gt; tab and add an article. You can even give clients access to maintain content only. Did I also mention it was &lt;a href=&quot;https://www.contentful.com/pricing/&quot;&gt;free up to 1M API calls a month&lt;/a&gt; and all media is also stored on a CDN (1TB limit!).&lt;/p&gt;
+&lt;p&gt;Now that the content model is setup, we can visit the &lt;strong&gt;Content&lt;/strong&gt; tab and add a &lt;strong&gt;Post&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/contentful-new-post.png&quot; alt=&quot;Contentful New Post&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: You can give clients access to add/edit content only. It is also &lt;a href=&quot;https://www.contentful.com/pricing/&quot;&gt;free up to 1M API calls a month&lt;/a&gt; with all media is stored on a CDN (1TB limit!).&lt;/p&gt;
 
 &lt;h2 id=&quot;javascript--markup---building-the-site&quot;&gt;Javascript &amp;amp; Markup - Building the Site&lt;/h2&gt;
 
@@ -59,27 +61,71 @@
 
 &lt;p&gt;To do this, I’ll use the &lt;a href=&quot;https://gulpjs.com/&quot;&gt;Gulp build tool&lt;/a&gt; to run our &lt;strong&gt;Javascript&lt;/strong&gt; and mesh it with &lt;a href=&quot;https://mozilla.github.io/nunjucks/&quot;&gt;Nunjucks&lt;/a&gt; as our templating engine for &lt;strong&gt;Markdown&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;I won’t go into the details but you can see &lt;a href=&quot;https://github.com/sjmcculloch/mutcoins/blob/master/gulpfile.js&quot;&gt;my gulp file on github&lt;/a&gt;. In essence, it reads from Contentful and then generates the site using the nunjucks templates.&lt;/p&gt;
+&lt;p&gt;I won’t go into too many details but you can see &lt;a href=&quot;https://github.com/sjmcculloch/mutcoins/blob/master/gulpfile.js&quot;&gt;my gulp file on github&lt;/a&gt;. In essence, it reads from Contentful and then generates the site using the nunjucks templates.&lt;/p&gt;
 
-&lt;p&gt;We’ll then make sure our gulp file and templates are checked in to &lt;a href=&quot;https://github.com/sjmcculloch/mutcoins&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Retrieving data is trivial thanks to the &lt;a href=&quot;https://www.npmjs.com/package/contentful-management&quot;&gt;library available in NPM&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;contentful&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'nso7hcqr5tuu'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+  &lt;span class=&quot;na&quot;&gt;accessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'5f6e61df9e7b247fcbaf7e501e93f1c97756279dcc91742a62139beab475f854'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Get the posts data from the cloud CMS and stash it locally&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'get:posts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEntries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'content_type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'2wKn6yEnZewu2SCCkus4as'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;dataObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'api/posts.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; 
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Compile the views with the data found in the api sepcified in&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// the template's front-matter.&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Additional data can be passed in the front-matter&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'generate'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'views/*.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apiData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apiUrls&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// for our configs file in view.js&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.json&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// better with a regexp.&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;apiUrls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;apiData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;api&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;apiData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;baseTemplate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;./layouts/base.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nunjucks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prettyUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'dist'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: you can get the space/accesstoken from Contentful’s admin area.&lt;/p&gt;
 
 &lt;h2 id=&quot;netlify-as-a-build--hosting-service&quot;&gt;Netlify as a Build &amp;amp; Hosting Service&lt;/h2&gt;
 
-&lt;p&gt;Netlify in one word is &lt;strong&gt;Awesome&lt;/strong&gt;! It offers continuous deployment. It will build our site, host it on their CDN servers and secure it via HTTPS. Furthermore, &lt;a href=&quot;https://www.netlify.com/pricing/&quot;&gt;it’s free for most sites&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Netlify in one word is &lt;strong&gt;Awesome&lt;/strong&gt;! It offers continuous deployment. It will build our site, host it on a global CDN and secure it via HTTPS. Furthermore, &lt;a href=&quot;https://www.netlify.com/pricing/&quot;&gt;it’s free for most sites&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/netlify-build.png&quot; alt=&quot;Netlify Build&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I mentioned &lt;strong&gt;Continuous Deployment&lt;/strong&gt; earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You would give editors access to contentful and sit back as your site is generated after each change. You are getting the best of a dynamic CMS without the resource hungry headaches.&lt;/p&gt;
+&lt;p&gt;I mentioned &lt;strong&gt;Continuous Deployment&lt;/strong&gt; earlier. Through the use of webhooks we can trigger builds from either Contentful or GitHub. These triggers can occur when a new post is added/modified or new code is checked in. You are getting the best of a dynamic CMS without all the headaches!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/contentful-netlify-workflow.svg&quot; alt=&quot;Contentful Netlify Workflow&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for the Madden console game.&lt;/p&gt;
+&lt;p&gt;The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for Madden NFL.&lt;/p&gt;
 
-&lt;p&gt;It’s hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and apis via Global CDNs (thanks Contentful). We’ve secured it via HTTPS and become very resilient to attack as it’s only HTML hosted on Global CDNs. Editors and developers have also been integrated into a continuous deployment model from the start.&lt;/p&gt;
+&lt;p&gt;It’s hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and APIs via Global CDNs (thanks Contentful). We’ve secured it via HTTPS and become very resilient to attack as it’s only HTML hosted on Global CDNs. Editors and developers are also integrated into a continuous deployment model from the start.&lt;/p&gt;
 
-&lt;p&gt;The JAMstack is a compelling architecture, combine that with Contentful and Netlify, it’s worth considering for your next web project.&lt;/p&gt;
+&lt;p&gt;The JAMstack is a compelling and modern web architecture. If you combine it with Contentful and Netlify, it’s worth considering for your next web project.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 05 Sep 2017 00:00:00 +1000</pubDate>

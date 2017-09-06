@@ -113,7 +113,7 @@ __Note__: you can get the space/accesstoken from Contentful's admin area.
 
 ## Netlify as a Build & Hosting Service
 
-Netlify in one word is __Awesome__! It offers continuous deployment. It will build our site, host it on a global CDN and secure it via HTTPS. Furthermore, [it's free for most sites](https://www.netlify.com/pricing/). 
+Netlify in one word is __Awesome__! It offers continuous deployment, builds our site, hosts it on a global CDN and secures it via HTTPS. Furthermore, [it's free for most sites](https://www.netlify.com/pricing/). 
 
 ![Netlify Build](/images/post-assets/netlify-build.png)
 

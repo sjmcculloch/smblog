@@ -125,7 +125,7 @@ I mentioned __Continuous Deployment__ earlier. Through the use of webhooks we ca
 
 The result of this experiment is www.makemutcoins.com, a simple blog site for making in-game currency for Madden NFL. 
 
-It's hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and APIs via Global CDNs (thanks Contentful). We've secured it via HTTPS and become very resilient to attack as it's only HTML hosted on Global CDNs. Editors and developers are also integrated into a continuous deployment model from the start. 
+It's hosted for free, has content available via Global CDNs (thanks Netlify), media via Global CDNs (thanks Contentful) and APIs via Global CDNs (thanks Contentful). We've secured it via HTTPS and become very resilient to attack as it's only HTML hosted in the cloud. Editors and Developers are also integrated into a continuous deployment model from the start. 
 
 The JAMstack is a compelling and modern web architecture. If you combine it with Contentful and Netlify, it's worth considering for your next web project.
 

@@ -9,7 +9,7 @@ category:
 - code
 ---
 
-In late 2012, I embarked on a project to implement Gamification for a technical community ([devcentral.f5.com](https://devcentral.f5.com)). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage deeper engagement. 
+In late 2012 I embarked on a project to implement Gamification for a technical community ([devcentral.f5.com](https://devcentral.f5.com)). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage a deeper engagement. 
 
 The implementation of Gamification in an app or website is fairly trivial if you understand a few high level concepts. 
 
@@ -21,7 +21,7 @@ The core fundamental concept of implementing game mechanics is the measurement o
 
 The definition of an action is __any activity performed by a user__.
 
-In our project, it was a technical community (similar to [StackOverflow](http://www.stackoverflow.com)) which had actions as follows:
+Our project was a technical community (similar to [StackOverflow](http://www.stackoverflow.com)) which had actions as follows:
 
 - Ask a Question
 - Add an Answer
@@ -32,7 +32,7 @@ In our project, it was a technical community (similar to [StackOverflow](http://
 - Vote up an Answer
 - Vote down an Answer
 
-After the actions are identified, we now assign value to each. The primary element of value is reputation, the externally visible representation of a person's contributions. You will often see this as a score next to their profile:
+After the actions were identified, we assigned value to each. The primary element of value is __reputation__, the externally visible representation of a person's contributions:
 
 ![Reputation in Gamification](/images/post-assets/reputation.png)
 
@@ -52,7 +52,7 @@ The second is when a user performs an action and awards reputation to another us
 - Vote up an Answer (+10) - *person who submitted answer gains reputation*
 - Vote down an Answer (-1) - *person who submitted answer loses reputation*
 
-You'll notice a difference in the amount of points between the two sets. Generally the second is a deeper level of engagement (voting by peers) and is therefore rewarded better. 
+You'll notice a difference in the amount of points between the two sets. The second is a vote by your peers and is therefore rewarded better.
 
 ## Badges, Levels & Privileges
 
@@ -66,22 +66,22 @@ Similar to a Scout's badges, the awarding of badges is a visual display of a use
 
 The awarding of badges uses three different methods:
 
-1. __Action Based__: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)/
+1. __Action Based__: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)
 
-2. __Event Based__: uses events to construct badge based on an event happening X number of times (e.g. A user's question is viewed 500 times)
+2. __Event Based__: uses events to construct a badge based on an event happening X number of times (e.g. A user's question is viewed 500 times)
 
 3. __Administrator Based__: awarded manually by a site administrator (e.g. user of the month)
 
 ### Levels & Privileges
 
-Similar to badges, levels can be an outward display of a user's achievement.
+Similar to badges, levels can be an external display of a user's achievement.
 
 1. Newbie (0+)
 2. Padawan (10+)
 3. Jedi Knight (100+)
 4. Jedi Master (1000+)
 
-Furthermore, levels can also be used for so much more! We used levels to control user privileges. We didn't want users to register a new account and then up vote their own content so we made up voting meet a level requirement.
+Furthermore, levels can also be used to control privileges. We didn't want users to register a new account and then vote up their own content so we made up voting meet a level requirement.
 
 - Vote up an Answer (+10) - *requires Padawan level*
 
@@ -101,7 +101,7 @@ Similar to bounties, a challenge can be a sequence of actions that a user might 
 
 ### Internal Metrics on Actions
 
-We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). Outside of the general game rules we were able to assign a ranking score to each action and use that to measure overall site activity. This was a much better representation than page views and we called it experience points.
+We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). This was a much better representation than page views and we called it experience points.
 
 ### Adjustments
 

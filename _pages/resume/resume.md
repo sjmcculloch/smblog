@@ -3,6 +3,7 @@ layout: page
 title:  "Resume"
 pagetitle: "Scott McCulloch - Software Engineer Resume"
 permalink: "/resume/"
+description: "The personal resume of Scott McCulloch, Software Engineer from Wollongong, Australia."
 ---
 
 Results-oriented Software Engineer with considerable experience in design, implementation and testing of enterprise applications. 

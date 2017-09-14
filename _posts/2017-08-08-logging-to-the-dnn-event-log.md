@@ -2,12 +2,12 @@
 layout: post
 date: 2017-08-08
 title: "How do I write to DNN event Logs?"
-description: Code samples on how to write to both the DNN (DotNetNuke) event logs (Event Viewer and Log4Net).
+description: "Code samples on how to write to both the DNN (DotNetNuke) event logs (Event Viewer and Log4Net)."
 comments: true
 category: 
 - code
 ---
-
+ 
 Event logs are great tools for Developers and Administrators alike. They provide an insight into the running state and history of an application. 
 
 For DNN, there are two repositories for collecting logging information that both serve different purposes.

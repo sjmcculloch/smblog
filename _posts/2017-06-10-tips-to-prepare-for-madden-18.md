@@ -2,7 +2,7 @@
 layout: post
 date: 2017-06-10 12:36
 title: "Tips to prepare for Madden NFL 18"
-description: Gameplay changes are coming to Madden 18! Learn how you can adjust your gameplay style today.
+description: "Gameplay changes are coming to Madden 18! Learn how you can adjust your gameplay style today."
 comments: true
 category: 
 - gaming

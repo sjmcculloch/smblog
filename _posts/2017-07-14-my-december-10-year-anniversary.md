@@ -2,7 +2,7 @@
 layout: post
 date: 2017-07-14
 title: "Kelly Clarkson's 'My December' 10 year review"
-description: My favourite Kelly Clarkson album 'My December' hits 10 years old in 2017, I take a look at it's release and some of my favourite tracks.
+description: "My favourite Kelly Clarkson album 'My December' hits 10 years old in 2017, I take a look at it's release and some of my favourite tracks."
 comments: true
 category: 
 - music

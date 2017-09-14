@@ -2,7 +2,7 @@
 layout: post
 date: 2017-07-20
 title: "Ventrian modules now free on GitHub"
-description: As of July 2017, all Ventrian modules are now on Github and freely available.
+description: "As of July 2017, all Ventrian modules are now on Github and freely available."
 comments: true
 category: 
 - code

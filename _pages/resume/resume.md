@@ -53,6 +53,16 @@ To obtain a position as a developer and/or analyst in a fun, fast paced, cutting
 - Author - ISBN: [0764595636](https://www.amazon.com/Professional-DotNetNuke-ASP-NET-Portals-Walker/dp/0764595636), [0471788163](https://www.amazon.com/Professional-DotNetNuke-Application-Framework-ASP-NET/dp/0471788163))
 - Speaker - [https://channel9.msdn.com/Events/Speakers/scott-mcculloch](https://channel9.msdn.com/Events/Speakers/scott-mcculloch)
 
+## Peer Quotes
+
+"What makes Scott so unique is his ability to contribute to nearly every area of the business and do it really well – he has expertise in SEO, UX, Security, conversion optimization, dev mentoring, training, architectural vision and general business and marketing acumen."
+
+"His ability to deeply understand the technology, define architectures, connect code level concepts to business outcomes, articulate a strategy cross-functionally and create a vision for his peers and teammates is unmatched."
+
+"His attitude was always one that centered on how we moved forward rather than dwelling on the constraints at hand. His continued positivity in the face of adversity and ambiguity was inspiring."
+
+See more on my [LinkedIn profile](https://www.linkedin.com/in/sjmcculloch/).
+
 ## Education
 
 #### ITIL Fundamentals (2007)

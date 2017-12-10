@@ -131,6 +131,8 @@
                 
             
                 
+            
+                
                     <a href="/categories/" >Categories</a>
                 
             
@@ -196,7 +198,7 @@
     </header>
 
     <div class="post-content">
-        <p>In late 2012, I embarked on a project to implement Gamification for a technical community (<a href="https://devcentral.f5.com">devcentral.f5.com</a>). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage deeper engagement.</p>
+        <p>In late 2012 I embarked on a project to implement Gamification for a technical community (<a href="https://devcentral.f5.com">devcentral.f5.com</a>). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage a deeper engagement.</p>
 
 <p>The implementation of Gamification in an app or website is fairly trivial if you understand a few high level concepts.</p>
 
@@ -208,7 +210,7 @@
 
 <p>The definition of an action is <strong>any activity performed by a user</strong>.</p>
 
-<p>In our project, it was a technical community (similar to <a href="http://www.stackoverflow.com">StackOverflow</a>) which had actions as follows:</p>
+<p>Our project was a technical community (similar to <a href="http://www.stackoverflow.com">StackOverflow</a>) which had actions as follows:</p>
 
 <ul>
   <li>Ask a Question</li>
@@ -221,7 +223,7 @@
   <li>Vote down an Answer</li>
 </ul>
 
-<p>After the actions are identified, we now assign value to each. The primary element of value is reputation, the externally visible representation of a person’s contributions. You will often see this as a score next to their profile:</p>
+<p>After the actions were identified, we assigned value to each. The primary element of value is <strong>reputation</strong>, the externally visible representation of a person’s contributions:</p>
 
 <p><img src="/images/post-assets/reputation.png" alt="Reputation in Gamification" /></p>
 
@@ -245,7 +247,7 @@
   <li>Vote down an Answer (-1) - <em>person who submitted answer loses reputation</em></li>
 </ul>
 
-<p>You’ll notice a difference in the amount of points between the two sets. Generally the second is a deeper level of engagement (voting by peers) and is therefore rewarded better.</p>
+<p>You’ll notice a difference in the amount of points between the two sets. The second is a vote by your peers and is therefore rewarded better.</p>
 
 <h2 id="badges-levels--privileges">Badges, Levels &amp; Privileges</h2>
 
@@ -261,10 +263,10 @@
 
 <ol>
   <li>
-    <p><strong>Action Based</strong>: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)/</p>
+    <p><strong>Action Based</strong>: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)</p>
   </li>
   <li>
-    <p><strong>Event Based</strong>: uses events to construct badge based on an event happening X number of times (e.g. A user’s question is viewed 500 times)</p>
+    <p><strong>Event Based</strong>: uses events to construct a badge based on an event happening X number of times (e.g. A user’s question is viewed 500 times)</p>
   </li>
   <li>
     <p><strong>Administrator Based</strong>: awarded manually by a site administrator (e.g. user of the month)</p>
@@ -273,7 +275,7 @@
 
 <h3 id="levels--privileges">Levels &amp; Privileges</h3>
 
-<p>Similar to badges, levels can be an outward display of a user’s achievement.</p>
+<p>Similar to badges, levels can be an external display of a user’s achievement.</p>
 
 <ol>
   <li>Newbie (0+)</li>
@@ -282,7 +284,7 @@
   <li>Jedi Master (1000+)</li>
 </ol>
 
-<p>Furthermore, levels can also be used for so much more! We used levels to control user privileges. We didn’t want users to register a new account and then up vote their own content so we made up voting meet a level requirement.</p>
+<p>Furthermore, levels can also be used to control privileges. We didn’t want users to register a new account and then vote up their own content so we made up voting meet a level requirement.</p>
 
 <ul>
   <li>Vote up an Answer (+10) - <em>requires Padawan level</em></li>
@@ -304,7 +306,7 @@
 
 <h3 id="internal-metrics-on-actions">Internal Metrics on Actions</h3>
 
-<p>We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). Outside of the general game rules we were able to assign a ranking score to each action and use that to measure overall site activity. This was a much better representation than page views and we called it experience points.</p>
+<p>We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). This was a much better representation than page views and we called it experience points.</p>
 
 <h3 id="adjustments">Adjustments</h3>
 
@@ -322,8 +324,8 @@
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Gamification Concepts in Software Design&p[summary]=In late 2012, I embarked on a project to implement Gamification for a technical community (devcentral.f5.com). The intent was to introduc...&p[url]=https://www.smcculloch.com/code/gamification-concepts-in-software-design.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=https://www.smcculloch.com/code/gamification-concepts-in-software-design.html&text=In late 2012, I embarked on a project to implement Gamification for a technical community (devcentral.f5.com). The intent was to introduc...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Gamification Concepts in Software Design&p[summary]=In late 2012 I embarked on a project to implement Gamification for a technical community (devcentral.f5.com). The intent was to introduce...&p[url]=https://www.smcculloch.com/code/gamification-concepts-in-software-design.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=https://www.smcculloch.com/code/gamification-concepts-in-software-design.html&text=In late 2012 I embarked on a project to implement Gamification for a technical community (devcentral.f5.com). The intent was to introduce...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         

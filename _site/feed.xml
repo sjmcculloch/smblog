@@ -5,13 +5,13 @@
     <description>I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below.</description>
     <link>https://www.smcculloch.com/</link>
     <atom:link href="https://www.smcculloch.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Sep 2017 15:58:50 +1000</pubDate>
-    <lastBuildDate>Thu, 14 Sep 2017 15:58:50 +1000</lastBuildDate>
+    <pubDate>Mon, 11 Dec 2017 10:45:49 +1100</pubDate>
+    <lastBuildDate>Mon, 11 Dec 2017 10:45:49 +1100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Gamification Concepts in Software Design</title>
-        <description>&lt;p&gt;In late 2012, I embarked on a project to implement Gamification for a technical community (&lt;a href=&quot;https://devcentral.f5.com&quot;&gt;devcentral.f5.com&lt;/a&gt;). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage deeper engagement.&lt;/p&gt;
+        <description>&lt;p&gt;In late 2012 I embarked on a project to implement Gamification for a technical community (&lt;a href=&quot;https://devcentral.f5.com&quot;&gt;devcentral.f5.com&lt;/a&gt;). The intent was to introduce the elements of game playing (point scoring, competition with others, rules of play) to encourage a deeper engagement.&lt;/p&gt;
 
 &lt;p&gt;The implementation of Gamification in an app or website is fairly trivial if you understand a few high level concepts.&lt;/p&gt;
 
@@ -23,7 +23,7 @@
 
 &lt;p&gt;The definition of an action is &lt;strong&gt;any activity performed by a user&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;In our project, it was a technical community (similar to &lt;a href=&quot;http://www.stackoverflow.com&quot;&gt;StackOverflow&lt;/a&gt;) which had actions as follows:&lt;/p&gt;
+&lt;p&gt;Our project was a technical community (similar to &lt;a href=&quot;http://www.stackoverflow.com&quot;&gt;StackOverflow&lt;/a&gt;) which had actions as follows:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Ask a Question&lt;/li&gt;
@@ -36,7 +36,7 @@
   &lt;li&gt;Vote down an Answer&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;After the actions are identified, we now assign value to each. The primary element of value is reputation, the externally visible representation of a person’s contributions. You will often see this as a score next to their profile:&lt;/p&gt;
+&lt;p&gt;After the actions were identified, we assigned value to each. The primary element of value is &lt;strong&gt;reputation&lt;/strong&gt;, the externally visible representation of a person’s contributions:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/post-assets/reputation.png&quot; alt=&quot;Reputation in Gamification&quot; /&gt;&lt;/p&gt;
 
@@ -60,7 +60,7 @@
   &lt;li&gt;Vote down an Answer (-1) - &lt;em&gt;person who submitted answer loses reputation&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You’ll notice a difference in the amount of points between the two sets. Generally the second is a deeper level of engagement (voting by peers) and is therefore rewarded better.&lt;/p&gt;
+&lt;p&gt;You’ll notice a difference in the amount of points between the two sets. The second is a vote by your peers and is therefore rewarded better.&lt;/p&gt;
 
 &lt;h2 id=&quot;badges-levels--privileges&quot;&gt;Badges, Levels &amp;amp; Privileges&lt;/h2&gt;
 
@@ -76,10 +76,10 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Action Based&lt;/strong&gt;: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)/&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Action Based&lt;/strong&gt;: uses actions to construct a badge based on a user performing an action X number of times (e.g. Primary Voter Badge: vote up 10 questions)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Event Based&lt;/strong&gt;: uses events to construct badge based on an event happening X number of times (e.g. A user’s question is viewed 500 times)&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Event Based&lt;/strong&gt;: uses events to construct a badge based on an event happening X number of times (e.g. A user’s question is viewed 500 times)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Administrator Based&lt;/strong&gt;: awarded manually by a site administrator (e.g. user of the month)&lt;/p&gt;
@@ -88,7 +88,7 @@
 
 &lt;h3 id=&quot;levels--privileges&quot;&gt;Levels &amp;amp; Privileges&lt;/h3&gt;
 
-&lt;p&gt;Similar to badges, levels can be an outward display of a user’s achievement.&lt;/p&gt;
+&lt;p&gt;Similar to badges, levels can be an external display of a user’s achievement.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Newbie (0+)&lt;/li&gt;
@@ -97,7 +97,7 @@
   &lt;li&gt;Jedi Master (1000+)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Furthermore, levels can also be used for so much more! We used levels to control user privileges. We didn’t want users to register a new account and then up vote their own content so we made up voting meet a level requirement.&lt;/p&gt;
+&lt;p&gt;Furthermore, levels can also be used to control privileges. We didn’t want users to register a new account and then vote up their own content so we made up voting meet a level requirement.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Vote up an Answer (+10) - &lt;em&gt;requires Padawan level&lt;/em&gt;&lt;/li&gt;
@@ -119,7 +119,7 @@
 
 &lt;h3 id=&quot;internal-metrics-on-actions&quot;&gt;Internal Metrics on Actions&lt;/h3&gt;
 
-&lt;p&gt;We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). Outside of the general game rules we were able to assign a ranking score to each action and use that to measure overall site activity. This was a much better representation than page views and we called it experience points.&lt;/p&gt;
+&lt;p&gt;We also recorded an internal metric on each action. This was only visible internally and allowed us to measure the engagement of the overrall site (irrespective of how much reputation was given). This was a much better representation than page views and we called it experience points.&lt;/p&gt;
 
 &lt;h3 id=&quot;adjustments&quot;&gt;Adjustments&lt;/h3&gt;
 

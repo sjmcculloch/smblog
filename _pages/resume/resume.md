@@ -1,24 +1,35 @@
 ---
 layout: page
-title:  "Resume"
-pagetitle: "Scott McCulloch - Software Engineer Resume"
-permalink: "/resume/"
-description: "The personal resume of Scott McCulloch, Software Engineer from Wollongong, Australia."
+title: 'Resume'
+pagetitle: 'Scott McCulloch - Software Engineer Resume'
+permalink: '/resume/'
+description: 'The personal resume of Scott McCulloch, Software Engineer from Wollongong, Australia.'
 ---
 
-Results-oriented Software Engineer with considerable experience in design, implementation and testing of enterprise applications. 
+Results-oriented Software Engineer with considerable experience in design, implementation and testing of enterprise applications.
 
 ## Objective
 
-To obtain a position as a developer and/or analyst in a fun, fast paced, cutting edge environment that promotes teamwork and integrity. 
+To obtain a position as a developer and/or analyst in a fun, fast paced, cutting edge environment that promotes teamwork and integrity.
 
 ## Professional Experience
+
+#### Full Stack Developer - State Emergency Service (2017 - Present)
+
+- React, React-Native & GraphQL development for emergency response & availability applications.
+- [Open Source Prototype](https://github.com/nswsesmembers/availability-poc)
+- .NET/Azure Developer for API integration
+
+#### Digital Analyst - Analytics Pros (2017 - Present)
+
+- Google Marketing Suite specialist (Google Analytics, Google Tag Manager & Big Query)
+- Major clients: Nordstrom, GoPro, Brownells, Major League Soccer
 
 #### Senior Systems Analyst - F5 Networks (2012 - 2017)
 
 - Developed sites - [devcentral.f5.com](https://devcentral.f5.com), [f5.com](https://f5.com), [partners.f5.com](https://partners.f5.com)
 - Developed ASP.NET Core/Azure/MVC "Try F5" trials application
-- Lead generation (Marketo), SEO,  Localization (8 languages)
+- Lead generation (Marketo), SEO, Localization (8 languages)
 
 #### Senior Systems Analyst - Bluescope Steel (2006 - 2012)
 
@@ -41,7 +52,7 @@ To obtain a position as a developer and/or analyst in a fun, fast paced, cutting
 
 - Developed Steel customer portal - [www.bluescopesteelconnect.com](http://www.bluescopesteelconnect.com/)
 - Developed first mobile WAP solution (order status, invoices)
-- Developed J2EE site (ATG Dynamo) - [bhpbilliton.com](http://bhpbilliton.com) 
+- Developed J2EE site (ATG Dynamo) - [bhpbilliton.com](http://bhpbilliton.com)
 
 ## Open Source Experience
 
@@ -74,7 +85,3 @@ See more on my [LinkedIn profile](https://www.linkedin.com/in/sjmcculloch/).
 #### Masters of Computer Science - Wollongong University (2002)
 
 #### Bachelor of Computer Science - Wollongong University (1999)
-
-
-
-

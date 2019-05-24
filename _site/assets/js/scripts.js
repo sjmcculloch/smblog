@@ -43,36 +43,21 @@ jQuery(document).ready( function() {
         jQuery('meta[name="twitter:image"]').attr('content', firstImgSrc);
     }
 
-    // Fixed sidebar or not!
+    // Menus Show/Hide
     var steveSidebar = jQuery('.user-profile');
-    var steveSidebarPos = steveSidebar.offset().top;
-
-    function fixedSidebar() {
-        var scrollPos = jQuery(window).scrollTop();
-        if (scrollPos >= steveSidebarPos) {
-            steveSidebar.css({'top': scrollPos - 70});
-        }
-        else if (scrollPos === 0) {
-            steveSidebar.css({'top': 0});
-        }
-    };
-
-    if(steveSidebar.hasClass('fixed')) {
-        fixedSidebar();
-    }
-
-    jQuery(window).on('scroll', function () {
-        if(steveSidebar.hasClass('fixed')) {
-            fixedSidebar();
-        }
-    });
-
     var viewportWidth = window.innerWidth;
 
     jQuery(window).on('resize', function() {
         viewportWidth = window.innerWidth;
-        if (viewportWidth > 768 && steveSidebar.hasClass('fixed')) {
-            fixedSidebar();
+        if (viewportWidth > 768 && steveSidebar.hasClass('active')) {
+            steveSidebar.removeClass('active');
+            jQuery('.wrapper').removeClass('active');
+            jQuery('#toggleBurger').prop('checked', false);
         }
+    });
+
+    jQuery('.trigger').on('click', function() {
+        steveSidebar.toggleClass('active');
+        jQuery('.wrapper').toggleClass('active');
     });
 });

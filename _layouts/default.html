@@ -3,15 +3,11 @@
     {% include head.html %}
 
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DZ28MK"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div class="wrapper clear">
+        <div class="wrapper">
             {% include sidebar.html %}
 
             <main class="the-content" role="main">
-                {% include ventrian.html %}
+                {% include search.html %}
                 {{ content }}
             </main>
         </div>

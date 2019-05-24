@@ -3,11 +3,11 @@
   <channel>
     <title>Scott McCulloch - Senior Software Engineer</title>
     <description>I'm a web coder that enjoys sport, gaming and listening to music. You can find me on Twitter or LinkedIn below.</description>
-    <link>https://www.smcculloch.com/</link>
-    <atom:link href="https://www.smcculloch.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Aug 2018 13:48:35 +1000</pubDate>
-    <lastBuildDate>Mon, 20 Aug 2018 13:48:35 +1000</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 May 2019 22:10:00 +1000</pubDate>
+    <lastBuildDate>Fri, 24 May 2019 22:10:00 +1000</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
     
       <item>
         <title>Gamification Concepts in Software Design</title>
@@ -133,8 +133,8 @@
 
 </description>
         <pubDate>Thu, 14 Sep 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/code/gamification-concepts-in-software-design </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/code/gamification-concepts-in-software-design </guid>
+        <link>http://localhost:4000/code/gamification-concepts-in-software-design.html</link>
+        <guid isPermaLink="true">http://localhost:4000/code/gamification-concepts-in-software-design.html</guid>
         
         
         <category>code</category>
@@ -197,7 +197,7 @@
 
 &lt;p&gt;Retrieving data is trivial thanks to the &lt;a href=&quot;https://www.npmjs.com/package/contentful-management&quot;&gt;library available in NPM&lt;/a&gt;:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nunjucks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gulp-nunjucks'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nunjucks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'gulp-nunjucks'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;contentful&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'nso7hcqr5tuu'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
@@ -253,8 +253,8 @@
 
 </description>
         <pubDate>Tue, 05 Sep 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/code/netlify-contentful-jamstack </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/code/netlify-contentful-jamstack </guid>
+        <link>http://localhost:4000/code/netlify-contentful-jamstack.html</link>
+        <guid isPermaLink="true">http://localhost:4000/code/netlify-contentful-jamstack.html</guid>
         
         
         <category>code</category>
@@ -300,8 +300,8 @@
 &lt;p&gt;Enjoy!&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Aug 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/music/what-happened-to-kellyclarksonlive </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/music/what-happened-to-kellyclarksonlive </guid>
+        <link>http://localhost:4000/music/what-happened-to-kellyclarksonlive.html</link>
+        <guid isPermaLink="true">http://localhost:4000/music/what-happened-to-kellyclarksonlive.html</guid>
         
         
         <category>music</category>
@@ -343,8 +343,8 @@
 &lt;p&gt;&lt;strong&gt;7Mate&lt;/strong&gt; @ Wednesday 20 September 12:00am - 1:05am&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Aug 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/sport/hard-knocks-season-13-australia </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/sport/hard-knocks-season-13-australia </guid>
+        <link>http://localhost:4000/sport/hard-knocks-season-13-australia.html</link>
+        <guid isPermaLink="true">http://localhost:4000/sport/hard-knocks-season-13-australia.html</guid>
         
         
         <category>sport</category>
@@ -390,13 +390,13 @@
 
 &lt;p&gt;Logging is relatively straight forward (make sure you swap MyClassName for your class name).&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// include somewhere in your class - available to all methods.
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ILog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Logger&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoggerSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetLogger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// include somewhere in your class - available to all methods.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ILog&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Logger&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoggerSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetLogger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MyClassName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// cause some error
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// cause some error&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;Logger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -432,8 +432,8 @@
 
 </description>
         <pubDate>Tue, 08 Aug 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/code/logging-to-the-dnn-event-log </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/code/logging-to-the-dnn-event-log </guid>
+        <link>http://localhost:4000/code/logging-to-the-dnn-event-log.html</link>
+        <guid isPermaLink="true">http://localhost:4000/code/logging-to-the-dnn-event-log.html</guid>
         
         
         <category>code</category>
@@ -470,8 +470,8 @@
 
 </description>
         <pubDate>Thu, 20 Jul 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/code/ventrian-modules-now-on-github </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/code/ventrian-modules-now-on-github </guid>
+        <link>http://localhost:4000/code/ventrian-modules-now-on-github.html</link>
+        <guid isPermaLink="true">http://localhost:4000/code/ventrian-modules-now-on-github.html</guid>
         
         
         <category>code</category>
@@ -539,8 +539,8 @@
 
 </description>
         <pubDate>Fri, 14 Jul 2017 00:00:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/music/my-december-10-year-anniversary </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/music/my-december-10-year-anniversary </guid>
+        <link>http://localhost:4000/music/my-december-10-year-anniversary.html</link>
+        <guid isPermaLink="true">http://localhost:4000/music/my-december-10-year-anniversary.html</guid>
         
         
         <category>music</category>
@@ -611,8 +611,8 @@
 
 </description>
         <pubDate>Sat, 10 Jun 2017 12:36:00 +1000</pubDate>
-        <link>https://www.smcculloch.com/gaming/tips-to-prepare-for-madden-18 </link>
-        <guid isPermaLink="true">https://www.smcculloch.com/gaming/tips-to-prepare-for-madden-18 </guid>
+        <link>http://localhost:4000/gaming/tips-to-prepare-for-madden-18.html</link>
+        <guid isPermaLink="true">http://localhost:4000/gaming/tips-to-prepare-for-madden-18.html</guid>
         
         
         <category>gaming</category>

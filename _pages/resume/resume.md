@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 'Resume'
-pagetitle: 'Scott McCulloch - Software Engineer Resume'
-permalink: '/resume/'
-description: 'The personal resume of Scott McCulloch, Software Engineer from Wollongong, Australia.'
+title: "Resume"
+pagetitle: "Scott McCulloch - Software Engineer Resume"
+permalink: "/resume/"
+description: "The personal resume of Scott McCulloch, Software Engineer from Wollongong, Australia."
 ---
 
 Results-oriented Software Engineer with considerable experience in design, implementation and testing of enterprise applications.
@@ -14,13 +14,13 @@ To obtain a position as a developer and/or analyst in a fun, fast paced, cutting
 
 ## Professional Experience
 
-#### Full Stack Developer - State Emergency Service (2017 - Present)
+#### Systems Architect - State Emergency Service (2017 - Present)
 
+- Azure DevOps - Operational Systems (Enterprise Service Bus, MVC, SQL Server)
 - React, React-Native & GraphQL development for emergency response & availability applications.
 - [Open Source Prototype](https://github.com/nswsesmembers/availability-poc)
-- .NET/Azure Developer for API integration
 
-#### Digital Analyst - Analytics Pros (2017 - Present)
+#### Digital Analyst - Analytics Pros (2017 - 2018)
 
 - Google Marketing Suite specialist (Google Analytics, Google Tag Manager & Big Query)
 - Major clients: Nordstrom, GoPro, Brownells, Major League Soccer

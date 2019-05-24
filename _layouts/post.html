@@ -4,7 +4,7 @@ layout: default
 
 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-        <ul class="clear">
+        <ul>
             <li><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b, %Y" }}</time></li>
             {% if site.show_categories == 1 and page.category %}
                 {% if page.category %}
@@ -26,8 +26,8 @@ layout: default
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]={{page.title | strip_html }}&p[summary]={{page.content | strip_html | truncate: 140 }}&p[url]={{ page.url | prepend: site.baseurl | prepend: site.shareurl }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url={{page.url | prepend: site.baseurl | prepend: site.shareurl | escape}}&text={{ page.content | strip_html | truncate: 140 }}&hashtags={% for tag in page.tags %}{{ tag }},{% endfor %}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]={{page.title | strip_html }}&p[summary]={{page.content | strip_html | truncate: 140 }}&p[url]={{ page.url | prepend: site.baseurl | prepend: site.url }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url={{page.url | prepend: site.baseurl | prepend: site.url | escape}}&text={{ page.content | strip_html | truncate: 140 }}&hashtags={% for tag in page.tags %}{{ tag }},{% endfor %}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         {% if site.show_tags == 1 and page.tags %}
@@ -47,7 +47,7 @@ layout: default
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function () {
-            this.page.url = '{{ page.url | prepend: site.baseurl | prepend: site.shareurl }}';
+            this.page.url = '{{ page.url | prepend: site.baseurl | prepend: site.url }}';
             this.page.identifier = '{{ page.date | date: "%-m/%-d/%Y" }}';
         };
         (function() {
